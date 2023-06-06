@@ -21,7 +21,7 @@ public class ApiTests {
         // rest assured adds charset specification by default which is not expected by dropbox and results in an error
         RestAssured.config = RestAssured.config().encoderConfig(encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false));
 
-        File file = new File("src/test/resources/sample.jpg");
+        File file = new File("src/test/resources/gil.jpg");
         String apiArgs = "{\"mode\":\"add\",\"autorename\":true,\"mute\":false,\"path\":\"gil.jpeg\"}";
 
         given()
@@ -38,7 +38,7 @@ public class ApiTests {
     @Test
     public void getFileMetadataTest() {
         Map<String,String> path = new HashMap<>();
-        path.put("path", "/sample.jpg");
+        path.put("path", "/gil.jpg");
 
         given()
           .headers("Authorization","Bearer " + Config.bearerToken,
@@ -53,7 +53,7 @@ public class ApiTests {
     @Test
     public void deleteFileTest() {
         Map<String,String> path = new HashMap<>();
-        path.put("path", "/sample.jpg");
+        path.put("path", "/gil.jpg");
 
         given()
           .headers("Authorization","Bearer " + Config.bearerToken,
