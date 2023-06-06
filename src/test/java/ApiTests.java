@@ -9,6 +9,10 @@ import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
 import static io.restassured.config.EncoderConfig.encoderConfig;
 
+import io.qameta.allure.Link;
+import io.qameta.allure.Issue;
+import io.qameta.allure.TmsLink;
+
 public class ApiTests {
 
 //    Cover the next endpoints with tests and include into in CI pipeline:
@@ -16,7 +20,7 @@ public class ApiTests {
 //    - GetFileMetadata
 //    - Delete file
 
-    @Test
+    @Test()
     public void uploadFileTest() {
         // rest assured adds charset specification by default which is not expected by dropbox and results in an error
         RestAssured.config = RestAssured.config().encoderConfig(encoderConfig().appendDefaultContentCharsetToContentTypeIfUndefined(false));
