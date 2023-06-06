@@ -4,7 +4,7 @@ Covering Dropbox API with tests
 
 Requirements:
 - Apache Maven
-- Java 18
+- Java
 - Allure
 
 
