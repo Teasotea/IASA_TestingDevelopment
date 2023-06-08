@@ -12,10 +12,13 @@ Requirements:
 
 How to reproduce:
 1) If Maven is not installed, do it (on Debian-based Linux OS use `sudo apt-get install maven`)
-2) Clone this repo `git clone --single-branch --branch WebUI https://github.com/Teasotea/IASA_TestingDevelopment.git`
-3) Open folder with `cd iasa_testing-and-development`
-4) Run tests with `mvn test` (or import to your IDE)
-5) Open allure reports with `allure serve allure-results` 
+2) Clone this repo 
+
+`git clone --single-branch --branch WebUI https://github.com/Teasotea/IASA_TestingDevelopment.git`
+
+4) Open folder with `cd iasa_testing-and-development`
+5) Run tests with `mvn test` (or import to your IDE)
+6) Open allure reports with `allure serve allure-results` 
 
 Shaposhnikova Sofiia, student at IASA, KA-02
 
